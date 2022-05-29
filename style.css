@@ -1,0 +1,105 @@
+
+/*
+
+reset margin padding usualy use reset normalize.css for better efect
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.headeris{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: bisque;
+}
+.headeris>ul{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+   list-style: none;
+    cursor: pointer;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url("https://pbs.twimg.com/media/FSZLK4dWQAAZIhy?format=jpg&name=large")aquamarine no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.form--border{
+    border: 1px solid black;
+    width: 10.5%;
+    padding: 2rem;
+    margin-left: 5px;
+    display: none;
+}
+
+#weight--lifter--info{
+    width:100%;
+    height:auto;
+    min-height:80vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+/*
+Form for new user data , on click its appears
+
+*/
+#user-new-info{
+    margin-top: 5rem;
+    display: none;
+    position: absolute;
+}
+/*
+Display non for buttons "Galery" and "Delete All Gallery" if there no user data saved
+*/
+.galery-hiden{
+    display: none;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    height: 10vh;
+    background-color: bisque;
+    padding-left: 2rem;
+}
+li:hover{
+    border: 1px solid black;
+    border-radius: 10%;
+    font-size: 1rem;
+    background-color: aqua;
+    box-shadow: 5px 5px 1px rebeccapurple;
+}
+/*
+media for responsive screen for tablets phones etc
+*/
+@media screen and (max-width: 900px) {
+    .headeris{
+       height: 100%;
+    }
+    .headeris>ul{
+        padding-top: 0.5rem;
+        display: block;
+        height: 100%;
+
+    }
+}
